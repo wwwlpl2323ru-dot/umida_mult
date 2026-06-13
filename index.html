@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ИИ-мультики — курс Умиды по созданию ИИ-роликов</title>
+  <meta name="description" content="Научитесь создавать яркие ИИ-ролики и мультяшных персонажей с нуля. Курс «ИИ-мультики» от Умиды: два тарифа, понятная программа и поддержка." />
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+
+  <!-- Шрифты -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#top" class="logo">
+        <svg class="logo__icon" viewBox="0 0 64 64" aria-hidden="true">
+          <path d="M32 14c-3 0-5 2-7 4-2-2-4-4-7-4-2 0-3 1-3 3 0 3 3 5 6 7-4 2-9 7-9 16 0 11 9 18 20 18s20-7 20-18c0-9-5-14-9-16 3-2 6-4 6-7 0-2-1-3-3-3-3 0-5 2-7 4-2-2-4-4-7-4z" fill="#FF4D77"/>
+          <path d="M22 18c2-2 4-4 7-4s5 2 7 4c-2 2-5 3-7 3s-5-1-7-3z" fill="#7BB661"/>
+          <circle cx="24" cy="36" r="2" fill="#F3E9DC"/>
+          <circle cx="32" cy="44" r="2" fill="#F3E9DC"/>
+          <circle cx="40" cy="36" r="2" fill="#F3E9DC"/>
+          <circle cx="28" cy="50" r="2" fill="#F3E9DC"/>
+          <circle cx="36" cy="50" r="2" fill="#F3E9DC"/>
+        </svg>
+        ИИ-мультики
+      </a>
+
+      <nav class="nav" id="nav">
+        <ul class="nav__list">
+          <li><a href="#about" class="nav-link">Об авторе</a></li>
+          <li><a href="#gallery" class="nav-link">Персонажи</a></li>
+          <li><a href="#program" class="nav-link">Программа</a></li>
+          <li><a href="#pricing" class="nav-link">Тарифы</a></li>
+          <li><a href="#reviews" class="nav-link">Отзывы</a></li>
+          <li><a href="#faq" class="nav-link">FAQ</a></li>
+        </ul>
+        <div class="header__cta">
+          <a href="https://t.me/umidacrafts/104" target="_blank" rel="noopener" class="btn btn-primary">Подробнее в Telegram</a>
+        </div>
+      </nav>
+
+      <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero__inner">
+        <div class="hero__content reveal">
+          <span class="eyebrow"><span class="eyebrow__emoji">🍓</span> Онлайн-курс</span>
+          <h1 class="hero__title">Создавай свои <span>ИИ-мультики</span> и зарабатывай на нейросетях</h1>
+          <p class="hero__text">
+            Пошаговый курс для тех, кто хочет научиться создавать яркие анимационные ролики с помощью
+            нейросетей — без опыта в рисовании и монтаже. От идеи и персонажа до готового видео для соцсетей.
+          </p>
+          <div class="hero__actions">
+            <a href="https://t.me/umidacrafts/104" target="_blank" rel="noopener" class="btn btn-primary btn-pulse">Смотреть подробности и отзывы</a>
+            <a href="https://t.me/umidanishanowa" target="_blank" rel="noopener" class="btn btn-secondary">Задать вопрос Умиде</a>
+          </div>
+          <div class="hero__stats">
+            <div>
+              <div class="hero__stat-num">2 тарифа</div>
+              <div class="hero__stat-label">на любой бюджет</div>
+            </div>
+            <div>
+              <div class="hero__stat-num">100% онлайн</div>
+              <div class="hero__stat-label">учитесь в своём темпе</div>
+            </div>
+            <div>
+              <div class="hero__stat-num">Без опыта</div>
+              <div class="hero__stat-label">подойдёт новичкам</div>
+            </div>
+          </div>
+        </div>
+        <div class="hero__media reveal">
+          <img src="assets/img/hero.jpg" alt="Умида и её ИИ-персонаж" width="760" height="900" />
+          <div class="hero__badge">
+            <span class="hero__badge-emoji">✨</span>
+            <span>Сделано на нейросетях</span>
+          </div>
+          <span class="float-deco float-deco--sm hero__deco-1" aria-hidden="true">🎬</span>
+          <span class="float-deco float-deco--slow hero__deco-2" aria-hidden="true">🍓</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- RIBBON -->
+    <div class="ribbon-wrap container">
+      <div class="ribbon reveal">
+        <div class="ribbon__track" aria-hidden="true">
+          <span>🍓 ИИ-мультики</span>
+          <span>✨ Нейросети</span>
+          <span>🎬 Анимация</span>
+          <span>🎨 Свои персонажи</span>
+          <span>📱 Контент для соцсетей</span>
+          <span>🍓 ИИ-мультики</span>
+          <span>✨ Нейросети</span>
+          <span>🎬 Анимация</span>
+          <span>🎨 Свои персонажи</span>
+          <span>📱 Контент для соцсетей</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- FEATURES -->
+    <section class="features" id="features">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Почему этот курс</span>
+          <h2 class="section-title">Всё, что нужно для старта в ИИ-анимации</h2>
+          <p class="section-lead">Понятная методика, готовые шаблоны промптов и поддержка на каждом шаге — даже если вы никогда не работали с нейросетями.</p>
+        </div>
+        <div class="features__grid">
+          <div class="feature-card reveal">
+            <div class="feature-card__icon">🎬</div>
+            <h3>От идеи до видео</h3>
+            <p>Разберём весь путь: придумываем персонажа, сценарий, генерируем сцены и собираем готовый ролик.</p>
+          </div>
+          <div class="feature-card reveal">
+            <div class="feature-card__icon">🧠</div>
+            <h3>Рабочие промпты</h3>
+            <p>Готовые формулы и шаблоны запросов для нейросетей — не нужно гадать, как описать персонажа.</p>
+          </div>
+          <div class="feature-card reveal">
+            <div class="feature-card__icon">🎨</div>
+            <h3>Свой узнаваемый стиль</h3>
+            <p>Научитесь создавать персонажей, которые выглядят одинаково в разных сценах и роликах.</p>
+          </div>
+          <div class="feature-card reveal">
+            <div class="feature-card__icon">📱</div>
+            <h3>Контент для соцсетей</h3>
+            <p>Форматы под Reels, Shorts и TikTok — короткие истории, которые набирают просмотры.</p>
+          </div>
+          <div class="feature-card reveal">
+            <div class="feature-card__icon">💬</div>
+            <h3>Поддержка автора</h3>
+            <p>На тарифе «С Умидой» — обратная связь, разбор работ и ответы на вопросы лично.</p>
+          </div>
+          <div class="feature-card reveal">
+            <div class="feature-card__icon">⚡</div>
+            <h3>Без сложного софта</h3>
+            <p>Только доступные инструменты и нейросети — никаких дорогих программ и мощных компьютеров.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT AUTHOR -->
+    <section class="about" id="about">
+      <div class="container about__inner">
+        <div class="about__media reveal">
+          <img src="assets/img/about.jpg" alt="Умида работает над ИИ-роликом за планшетом" width="680" height="850" />
+          <span class="float-deco float-deco--sm about__deco-1" aria-hidden="true">🎨</span>
+          <span class="float-deco float-deco--slow about__deco-2" aria-hidden="true">✨</span>
+        </div>
+        <div class="about__text reveal">
+          <span class="eyebrow">Об авторе</span>
+          <h2 class="section-title">Привет, я <span class="about__name">Умида</span> 🍓</h2>
+          <p>
+            Я создаю ИИ-мультики и анимированных персонажей, которые набирают тысячи просмотров в соцсетях.
+            За это время я прошла путь от первых неуклюжих генераций до стабильного узнаваемого стиля
+            и собственных проектов с персонажами.
+          </p>
+          <p>
+            В этом курсе я собрала всё, что помогло мне самой: рабочие связки нейросетей, проверенные
+            промпты и понятный план, по которому может пройти даже новичок.
+          </p>
+          <ul class="about__list">
+            <li>Создаю и веду собственные анимационные проекты с персонажами</li>
+            <li>Делюсь только проверенными на практике инструментами и приёмами</li>
+            <li>Объясняю просто — даже если вы открыли нейросеть впервые</li>
+          </ul>
+          <a href="https://t.me/umidanishanowa" target="_blank" rel="noopener" class="btn btn-primary">Написать Умиде</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="gallery" id="gallery">
+      <div class="container gallery__head">
+        <div class="section-head reveal">
+          <span class="eyebrow">Персонажи</span>
+          <h2 class="section-title">Кого можно создать на курсе</h2>
+          <p class="section-lead">Несколько примеров персонажей и историй, созданных с помощью нейросетей. У каждого — свой характер и стиль.</p>
+        </div>
+      </div>
+      <div class="gmq reveal">
+        <div class="gmq-track">
+          <div class="gcard">
+            <img src="assets/img/character-1.jpg" alt="Персонаж: Неидеальный наследник" width="440" height="550" />
+            <div class="gcard__caption">
+              <span class="tag">История</span>
+              <h4>Неидеальный наследник</h4>
+            </div>
+          </div>
+          <div class="gcard">
+            <img src="assets/img/character-2.jpg" alt="Персонаж: Неидеальный наследник, вторая сцена" width="440" height="550" />
+            <div class="gcard__caption">
+              <span class="tag">История</span>
+              <h4>Неидеальный наследник</h4>
+            </div>
+          </div>
+          <div class="gcard">
+            <img src="assets/img/character-3.jpg" alt="Персонаж: Подлая подружка" width="440" height="550" />
+            <div class="gcard__caption">
+              <span class="tag">История</span>
+              <h4>Подлая подружка</h4>
+            </div>
+          </div>
+          <div class="gcard">
+            <img src="assets/img/character-4.jpg" alt="Персонаж: Драгоценная месть" width="440" height="550" />
+            <div class="gcard__caption">
+              <span class="tag">История</span>
+              <h4>Драгоценная месть</h4>
+            </div>
+          </div>
+          <div class="gcard">
+            <img src="assets/img/character-5.jpg" alt="Авторский персонаж Умиды" width="440" height="550" />
+            <div class="gcard__caption">
+              <span class="tag">Авторский</span>
+              <h4>Авторский персонаж</h4>
+            </div>
+          </div>
+          <!-- дублируем карточки для бесшовной анимации -->
+          <div class="gcard" aria-hidden="true">
+            <img src="assets/img/character-1.jpg" alt="" width="440" height="550" />
+            <div class="gcard__caption">
+              <span class="tag">История</span>
+              <h4>Неидеальный наследник</h4>
+            </div>
+          </div>
+          <div class="gcard" aria-hidden="true">
+            <img src="assets/img/character-2.jpg" alt="" width="440" height="550" />
+            <div class="gcard__caption">
+              <span class="tag">История</span>
+              <h4>Неидеальный наследник</h4>
+            </div>
+          </div>
+          <div class="gcard" aria-hidden="true">
+            <img src="assets/img/character-3.jpg" alt="" width="440" height="550" />
+            <div class="gcard__caption">
+              <span class="tag">История</span>
+              <h4>Подлая подружка</h4>
+            </div>
+          </div>
+          <div class="gcard" aria-hidden="true">
+            <img src="assets/img/character-4.jpg" alt="" width="440" height="550" />
+            <div class="gcard__caption">
+              <span class="tag">История</span>
+              <h4>Драгоценная месть</h4>
+            </div>
+          </div>
+          <div class="gcard" aria-hidden="true">
+            <img src="assets/img/character-5.jpg" alt="" width="440" height="550" />
+            <div class="gcard__caption">
+              <span class="tag">Авторский</span>
+              <h4>Авторский персонаж</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROGRAM -->
+    <section class="program" id="program">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Программа</span>
+          <h2 class="section-title">Чему вы научитесь</h2>
+          <p class="section-lead">Курс построен от простого к сложному — каждый модуль закрепляет практикой.</p>
+        </div>
+        <div class="program__grid">
+          <div class="program-card reveal">
+            <div class="program-card__num">01</div>
+            <div>
+              <h3>Идея и сценарий</h3>
+              <p>Как придумать историю и персонажа, который понравится зрителям и будет легко узнаваться.</p>
+            </div>
+          </div>
+          <div class="program-card reveal">
+            <div class="program-card__num">02</div>
+            <div>
+              <h3>Создание персонажа в ИИ</h3>
+              <p>Подбираем внешность, стиль и настраиваем промпты так, чтобы персонаж получался стабильным.</p>
+            </div>
+          </div>
+          <div class="program-card reveal">
+            <div class="program-card__num">03</div>
+            <div>
+              <h3>Генерация сцен</h3>
+              <p>Учимся выстраивать кадры, ракурсы и эмоции — превращаем сценарий в визуальную историю.</p>
+            </div>
+          </div>
+          <div class="program-card reveal">
+            <div class="program-card__num">04</div>
+            <div>
+              <h3>Анимация и озвучка</h3>
+              <p>Оживляем кадры, добавляем движение, голос и музыку с помощью доступных нейросетей.</p>
+            </div>
+          </div>
+          <div class="program-card reveal">
+            <div class="program-card__num">05</div>
+            <div>
+              <h3>Монтаж ролика</h3>
+              <p>Собираем готовое видео, расставляем акценты и подбираем темп для соцсетей.</p>
+            </div>
+          </div>
+          <div class="program-card reveal">
+            <div class="program-card__num">06</div>
+            <div>
+              <h3>Публикация и упаковка</h3>
+              <p>Форматы, обложки и подписи — как оформить ролик, чтобы его захотели посмотреть.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section class="pricing" id="pricing">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Тарифы</span>
+          <h2 class="section-title">Выберите свой формат</h2>
+          <p class="section-lead">Можно учиться полностью самостоятельно или с поддержкой и обратной связью от Умиды.</p>
+        </div>
+        <div class="pricing__grid">
+
+          <div class="price-card reveal">
+            <h3 class="price-card__title">Самостоятельный</h3>
+            <p class="price-card__desc">Для тех, кто любит разбираться сам и хочет получить всю базу по выгодной цене.</p>
+            <div class="price-card__price">2 999 ₽</div>
+            <div class="price-card__period">единоразовый платёж</div>
+            <ul class="price-card__list">
+              <li>Полный доступ ко всем урокам курса</li>
+              <li>Готовые шаблоны промптов для нейросетей</li>
+              <li>Примеры персонажей и сценариев</li>
+              <li>Доступ к материалам без ограничения по времени</li>
+              <li>Обновления курса в подарок</li>
+            </ul>
+            <a
+              class="btn btn-primary btn-block"
+              target="_blank"
+              rel="noopener"
+              href="https://t.me/umidanishanowa?text=Привет!%20Хочу%20тариф%20%E2%80%9EСамостоятельный%E2%80%9C%20(2%20999%20%E2%82%BD)"
+            >Выбрать тариф</a>
+          </div>
+
+          <div class="price-card price-card--featured reveal">
+            <span class="price-card__badge">Популярный</span>
+            <h3 class="price-card__title">С Умидой</h3>
+            <p class="price-card__desc">Для тех, кто хочет учиться с поддержкой, разбором работ и обратной связью лично от автора.</p>
+            <div class="price-card__price">5 000 ₽</div>
+            <div class="price-card__period">единоразовый платёж</div>
+            <ul class="price-card__list">
+              <li>Всё из тарифа «Самостоятельный»</li>
+              <li>Личная обратная связь по вашим работам</li>
+              <li>Разбор ошибок и советы по улучшению стиля</li>
+              <li>Ответы на вопросы напрямую от Умиды</li>
+              <li>Доступ к закрытому чату учеников</li>
+            </ul>
+            <a
+              class="btn btn-gold btn-block"
+              target="_blank"
+              rel="noopener"
+              href="https://t.me/umidanishanowa?text=Привет!%20Хочу%20тариф%20%E2%80%9EС%20Умидой%E2%80%9C%20(5%20000%20%E2%82%BD)"
+            >Выбрать тариф</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section class="reviews" id="reviews">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Отзывы</span>
+          <h2 class="section-title">Что говорят ученики</h2>
+          <p class="section-lead">Больше отзывов и примеров работ — в Telegram-канале Умиды.</p>
+        </div>
+        <div class="reviews__grid">
+          <div class="review-card reveal">
+            <div class="review-card__stars">★★★★★</div>
+            <p>«Никогда не думала, что смогу сама создать персонажа, который выглядит одинаково в разных сценах. Всё разложено по шагам, очень понятно.»</p>
+            <div class="review-card__author">
+              <span class="review-card__avatar">🍓</span>
+              <span>Алина, ученица</span>
+            </div>
+          </div>
+          <div class="review-card reveal">
+            <div class="review-card__stars">★★★★★</div>
+            <p>«Взяла тариф «С Умидой» — обратная связь реально помогла довести первый ролик до ума. Без подсказок я бы застряла на середине.»</p>
+            <div class="review-card__author">
+              <span class="review-card__avatar">🍓</span>
+              <span>Марина, ученица</span>
+            </div>
+          </div>
+          <div class="review-card reveal">
+            <div class="review-card__stars">★★★★★</div>
+            <p>«Понравилось, что не нужно скачивать сложный софт — всё на тех инструментах, которые я уже пробовала, просто теперь умею пользоваться ими правильно.»</p>
+            <div class="review-card__author">
+              <span class="review-card__avatar">🍓</span>
+              <span>Дилноза, ученица</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Вопросы и ответы</span>
+          <h2 class="section-title">Часто задаваемые вопросы</h2>
+        </div>
+        <div class="faq__list">
+          <div class="faq-item reveal">
+            <button class="faq-item__question" aria-expanded="false">
+              <span>Нужен ли опыт в рисовании или монтаже?</span>
+              <span class="faq-item__icon">+</span>
+            </button>
+            <div class="faq-item__answer">
+              <div class="faq-item__answer-inner">
+                Нет. Курс рассчитан на новичков — мы используем нейросети для генерации изображений
+                и анимации, поэтому рисовать вручную не нужно. Достаточно базовых навыков работы с компьютером.
+              </div>
+            </div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-item__question" aria-expanded="false">
+              <span>Какие нейросети понадобятся и сколько это стоит?</span>
+              <span class="faq-item__icon">+</span>
+            </button>
+            <div class="faq-item__answer">
+              <div class="faq-item__answer-inner">
+                В курсе разбираются доступные и бесплатные/условно-бесплатные инструменты. Подробный список
+                и актуальные рекомендации — в материалах курса, они могут обновляться вместе с развитием нейросетей.
+              </div>
+            </div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-item__question" aria-expanded="false">
+              <span>В чём разница между тарифами «Самостоятельный» и «С Умидой»?</span>
+              <span class="faq-item__icon">+</span>
+            </button>
+            <div class="faq-item__answer">
+              <div class="faq-item__answer-inner">
+                Оба тарифа дают полный доступ к материалам курса. На тарифе «С Умидой» дополнительно есть
+                личная обратная связь по вашим работам, разбор ошибок и доступ к закрытому чату учеников.
+              </div>
+            </div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-item__question" aria-expanded="false">
+              <span>Сколько времени занимает обучение?</span>
+              <span class="faq-item__icon">+</span>
+            </button>
+            <div class="faq-item__answer">
+              <div class="faq-item__answer-inner">
+                Вы учитесь в своём темпе — материалы остаются с вами без ограничения по времени.
+                Можно проходить курс за несколько дней или растянуть на пару недель, в зависимости от вашей загрузки.
+              </div>
+            </div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-item__question" aria-expanded="false">
+              <span>Как оплатить и получить доступ?</span>
+              <span class="faq-item__icon">+</span>
+            </button>
+            <div class="faq-item__answer">
+              <div class="faq-item__answer-inner">
+                Нажмите на кнопку выбранного тарифа — откроется чат с Умидой в Telegram, где она подскажет
+                все детали по оплате и пришлёт доступ к материалам.
+              </div>
+            </div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-item__question" aria-expanded="false">
+              <span>Гарантируется ли заработок после курса?</span>
+              <span class="faq-item__icon">+</span>
+            </button>
+            <div class="faq-item__answer">
+              <div class="faq-item__answer-inner">
+                Курс даёт навыки и инструменты для создания ИИ-роликов, но результат зависит от вашей практики,
+                регулярности и вовлечённости. Доход не гарантирован.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="cta" id="cta">
+      <div class="container">
+        <div class="cta__box reveal">
+          <span class="float-deco float-deco--sm cta__deco cta__deco-1" aria-hidden="true">🍓</span>
+          <span class="float-deco float-deco--slow cta__deco cta__deco-2" aria-hidden="true">🎬</span>
+          <span class="float-deco float-deco--sm cta__deco cta__deco-3" aria-hidden="true">✨</span>
+          <h2>Готовы создать своего первого ИИ-персонажа?</h2>
+          <p>Загляните в Telegram-канал — там подробности курса, примеры работ и отзывы учеников. А если есть вопросы, пишите Умиде лично.</p>
+          <div class="cta__actions">
+            <a href="https://t.me/umidacrafts/104" target="_blank" rel="noopener" class="btn btn-secondary">Канал с подробностями</a>
+            <a href="https://t.me/umidanishanowa" target="_blank" rel="noopener" class="btn btn-secondary">Написать Умиде</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <a href="#top" class="logo">
+          <svg class="logo__icon" viewBox="0 0 64 64" aria-hidden="true">
+            <path d="M32 14c-3 0-5 2-7 4-2-2-4-4-7-4-2 0-3 1-3 3 0 3 3 5 6 7-4 2-9 7-9 16 0 11 9 18 20 18s20-7 20-18c0-9-5-14-9-16 3-2 6-4 6-7 0-2-1-3-3-3-3 0-5 2-7 4-2-2-4-4-7-4z" fill="#FF4D77"/>
+            <path d="M22 18c2-2 4-4 7-4s5 2 7 4c-2 2-5 3-7 3s-5-1-7-3z" fill="#7BB661"/>
+            <circle cx="24" cy="36" r="2" fill="#F3E9DC"/>
+            <circle cx="32" cy="44" r="2" fill="#F3E9DC"/>
+            <circle cx="40" cy="36" r="2" fill="#F3E9DC"/>
+            <circle cx="28" cy="50" r="2" fill="#F3E9DC"/>
+            <circle cx="36" cy="50" r="2" fill="#F3E9DC"/>
+          </svg>
+          ИИ-мультики
+        </a>
+        <div class="footer__links">
+          <a href="https://t.me/umidacrafts/104" target="_blank" rel="noopener">Telegram-канал</a>
+          <a href="https://t.me/umidanishanowa" target="_blank" rel="noopener">Личный контакт</a>
+          <a href="#faq">FAQ</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__disclaimer">
+          Материалы курса носят образовательный характер. Результаты и доход зависят от вовлечённости
+          и регулярности занятий ученика и не гарантируются.
+        </p>
+        <p class="footer__copy">© 2026 «ИИ-мультики» · Курс Умиды</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

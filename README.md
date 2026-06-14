@@ -46,7 +46,7 @@ project/
 - **Личный контакт** (вопросы): `https://t.me/umidanishanowa`
 - **Кнопки тарифов** ведут на оплату через Tribute:
   - «Самостоятельный» (2 999 ₽) → `https://web.tribute.tg/s/Sau`
-  - «С Умидой» (4 999 ₽) → `https://web.tribute.tg/s/Qsv`
+  - «С Умидой» (4 999 ₽) → `https://t.me/tribute/app?startapp=sYew`
 
 ## Цвета и шрифты (дизайн-токены)
 

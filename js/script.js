@@ -2,49 +2,46 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* ===== Мобильное меню ===== */
   const burger = document.getElementById('burger');
-  const nav = document.getElementById('nav');
+  const navLinks = document.getElementById('navLinks');
 
-  if (burger && nav) {
+  if (burger && navLinks) {
     burger.addEventListener('click', () => {
-      const isOpen = nav.classList.toggle('is-open');
+      const isOpen = navLinks.classList.toggle('is-open');
       burger.classList.toggle('is-active', isOpen);
       burger.setAttribute('aria-expanded', String(isOpen));
     });
 
-    nav.querySelectorAll('.nav-link').forEach((link) => {
+    navLinks.querySelectorAll('a').forEach((link) => {
       link.addEventListener('click', () => {
-        nav.classList.remove('is-open');
+        navLinks.classList.remove('is-open');
         burger.classList.remove('is-active');
         burger.setAttribute('aria-expanded', 'false');
       });
     });
   }
 
-  /* ===== Аккордеон FAQ ===== */
-  document.querySelectorAll('.faq-item').forEach((item) => {
-    const question = item.querySelector('.faq-item__question');
-    const answer = item.querySelector('.faq-item__answer');
-    const inner = item.querySelector('.faq-item__answer-inner');
+  /* ===== Аккордеоны (программа курса и FAQ) ===== */
+  document.querySelectorAll('.prog .acc, .faq .acc').forEach((item) => {
+    const head = item.querySelector('.acc-head');
+    const body = item.querySelector('.acc-body');
 
-    question.addEventListener('click', () => {
-      const isOpen = item.classList.contains('is-open');
+    head.addEventListener('click', () => {
+      const isOpen = item.classList.contains('active');
+      const group = item.closest('.prog, .faq');
 
-      document.querySelectorAll('.faq-item.is-open').forEach((openItem) => {
+      group.querySelectorAll('.acc.active').forEach((openItem) => {
         if (openItem !== item) {
-          openItem.classList.remove('is-open');
-          openItem.querySelector('.faq-item__question').setAttribute('aria-expanded', 'false');
-          openItem.querySelector('.faq-item__answer').style.maxHeight = null;
+          openItem.classList.remove('active');
+          openItem.querySelector('.acc-body').style.maxHeight = null;
         }
       });
 
       if (isOpen) {
-        item.classList.remove('is-open');
-        question.setAttribute('aria-expanded', 'false');
-        answer.style.maxHeight = null;
+        item.classList.remove('active');
+        body.style.maxHeight = null;
       } else {
-        item.classList.add('is-open');
-        question.setAttribute('aria-expanded', 'true');
-        answer.style.maxHeight = inner.offsetHeight + 'px';
+        item.classList.add('active');
+        body.style.maxHeight = body.scrollHeight + 'px';
       }
     });
   });

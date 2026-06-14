@@ -1,560 +1,306 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ИИ-мультики — курс Умиды по созданию ИИ-роликов</title>
-  <meta name="description" content="Научитесь создавать яркие ИИ-ролики и мультяшных персонажей с нуля. Курс «ИИ-мультики» от Умиды: два тарифа, понятная программа и поддержка." />
-
-  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
-
-  <!-- Шрифты -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
-
-  <link rel="stylesheet" href="css/styles.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ИИ-мультики · Курс Умиды — кинематографичные ИИ-ролики с нуля</title>
+<meta name="description" content="Освой нейросети Gemini, Grok и ElevenLabs с нуля и создавай эстетичные ИИ-ролики. Пошаговая система от Умиды Нишановой.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-  <!-- HEADER -->
-  <header class="header">
-    <div class="container header__inner">
-      <a href="#top" class="logo">
-        <svg class="logo__icon" viewBox="0 0 64 64" aria-hidden="true">
-          <path d="M32 14c-3 0-5 2-7 4-2-2-4-4-7-4-2 0-3 1-3 3 0 3 3 5 6 7-4 2-9 7-9 16 0 11 9 18 20 18s20-7 20-18c0-9-5-14-9-16 3-2 6-4 6-7 0-2-1-3-3-3-3 0-5 2-7 4-2-2-4-4-7-4z" fill="#FF4D77"/>
-          <path d="M22 18c2-2 4-4 7-4s5 2 7 4c-2 2-5 3-7 3s-5-1-7-3z" fill="#7BB661"/>
-          <circle cx="24" cy="36" r="2" fill="#F3E9DC"/>
-          <circle cx="32" cy="44" r="2" fill="#F3E9DC"/>
-          <circle cx="40" cy="36" r="2" fill="#F3E9DC"/>
-          <circle cx="28" cy="50" r="2" fill="#F3E9DC"/>
-          <circle cx="36" cy="50" r="2" fill="#F3E9DC"/>
-        </svg>
-        ИИ-мультики
-      </a>
+<header id="top">
+  <div class="wrap nav">
+    <a href="#top" class="logo"><span class="mark">🍓</span><span>ИИ-мультики<small>Курс Умиды</small></span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#future">Результат</a>
+      <a href="#how">Как это работает</a>
+      <a href="#program">Программа</a>
+      <a href="#reviews">Отзывы</a>
+      <a href="#prices">Тарифы</a>
+      <a class="btn menu-cta" href="#prices">Узнать форматы</a>
+    </nav>
+    <a class="btn nav-cta" href="#prices">Узнать форматы</a>
+    <button class="burger" id="burger" aria-label="Меню"><span></span><span></span><span></span></button>
+  </div>
+</header>
 
-      <nav class="nav" id="nav">
-        <ul class="nav__list">
-          <li><a href="#about" class="nav-link">Об авторе</a></li>
-          <li><a href="#gallery" class="nav-link">Персонажи</a></li>
-          <li><a href="#program" class="nav-link">Программа</a></li>
-          <li><a href="#pricing" class="nav-link">Тарифы</a></li>
-          <li><a href="#reviews" class="nav-link">Отзывы</a></li>
-          <li><a href="#faq" class="nav-link">FAQ</a></li>
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-copy reveal">
+      <span class="eyebrow">Нейросети · видео · творчество</span>
+      <h1>Создавай <span class="hl">киношные ИИ-мультики</span> за 15 минут — с нуля, без сложного монтажа</h1>
+      <p class="lead">Пошаговый курс для тех, кто хочет научиться создавать яркие анимационные ролики с помощью нейросетей — <b>без опыта работы в нейросетях и в монтаже</b>. От идеи и персонажа до готового видео для соцсетей.</p>
+      <ul class="bullets">
+        <li><span class="tick">✓</span><span>Без мощного ПК — подойдёт обычный ноутбук или даже телефон</span></li>
+        <li><span class="tick">✓</span><span>Без навыков сложного монтажа и дизайна</span></li>
+        <li><span class="tick">✓</span><span>Доступно из любой страны — покажу, как обходить блокировки</span></li>
+      </ul>
+      <div class="hero-cta">
+        <a class="btn btn-lg" href="#prices">Посмотреть форматы</a>
+        <span class="note">Доступ открывается сразу · материалы остаются навсегда</span>
+      </div>
+    </div>
+    <div class="hero-visual reveal">
+      <div class="hero-frame">
+        <span class="ribbon">🍓 Твой будущий ИИ-персонаж</span>
+        <img src="assets/img/hero.jpg" alt="Умида с ИИ-персонажем на ладони">
+      </div>
+      <span class="chip c1"><span class="dot" style="background:#4285F4"></span>Gemini</span>
+      <span class="chip c2"><span class="dot" style="background:#111"></span>Grok</span>
+      <span class="chip c3"><span class="dot" style="background:var(--strawberry)"></span>ElevenLabs</span>
+      <div class="prop spin" style="top:-14px;left:-6px;width:50px" aria-hidden="true"><svg viewBox="0 0 64 64"><defs><linearGradient id="gs1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffe9a8"/><stop offset="100%" stop-color="#d99a12"/></linearGradient></defs><path d="M32 4c2 15 13 26 28 28-15 2-26 13-28 28-2-15-13-26-28-28 15-2 26-13 28-28z" fill="url(#gs1)"/><ellipse cx="25" cy="23" rx="5" ry="3" fill="#fff" opacity=".65"/></svg></div>
+      <div class="prop spin3" style="bottom:18px;right:-10px;width:56px" aria-hidden="true"><svg viewBox="0 0 64 64"><defs><radialGradient id="gb1" cx="38%" cy="30%" r="78%"><stop offset="0" stop-color="#ff95a8"/><stop offset="45%" stop-color="#ff3d6e"/><stop offset="100%" stop-color="#c2174a"/></radialGradient></defs><path d="M32 59C19 54 11 43 11 31c0-4 3-7 7-6 3 0 5 1 7 1l7-3 7 3c2 0 4-1 7-1 4-1 7 2 7 6 0 12-8 23-21 28z" fill="url(#gb1)"/><g fill="#46B07A"><path d="M32 19C28 12 21 10 16 11c2 5 8 8 16 8z"/><path d="M32 19c4-7 11-9 16-8-2 5-8 8-16 8z"/></g><path d="M32 20c0-7 2-12 0-15-2 3 0 8 0 15z" fill="#3a9560"/><g fill="#ffe08a"><circle cx="23" cy="34" r="1.5"/><circle cx="32" cy="38" r="1.5"/><circle cx="41" cy="34" r="1.5"/><circle cx="27" cy="45" r="1.5"/><circle cx="37" cy="45" r="1.5"/><circle cx="32" cy="29" r="1.5"/></g><ellipse cx="24" cy="31" rx="5" ry="3" fill="#fff" opacity=".45"/></svg></div>
+      <div class="prop spin2" style="bottom:-8px;left:8%;width:38px" aria-hidden="true"><svg viewBox="0 0 64 64"><defs><radialGradient id="gp1" cx="38%" cy="32%" r="72%"><stop offset="0" stop-color="#ffffff"/><stop offset="50%" stop-color="#f3e9dc"/><stop offset="100%" stop-color="#dcc3a2"/></radialGradient></defs><circle cx="32" cy="32" r="23" fill="url(#gp1)"/><ellipse cx="24" cy="23" rx="8" ry="5" fill="#fff" opacity=".8"/><ellipse cx="41" cy="42" rx="5" ry="3" fill="#cbb089" opacity=".5"/></svg></div>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="proof reveal">
+      <div class="item"><div class="num">15 мин</div><div class="lbl">на готовый ролик</div></div>
+      <div class="item"><div class="num">5 модулей</div><div class="lbl">от старта до монетизации</div></div>
+      <div class="item"><div class="num">с нуля</div><div class="lbl">опыт не нужен</div></div>
+      <div class="item"><div class="num">любая страна</div><div class="lbl">с обходом блокировок</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<div class="gallery">
+  <div class="wrap g-head reveal">
+    <span class="eyebrow">Мои работы</span>
+    <h2>Герои моих ИИ-сериалов</h2>
+    <p>Такие персонажи набирают миллионы просмотров в Reels и TikTok. На курсе вы научитесь создавать своих.</p>
+  </div>
+  <div class="gmq">
+    <div class="gmq-track">
+      <div class="gcard"><img src="assets/img/character-1.jpg" alt="ИИ-персонаж"><div class="cap"><div class="t">Неидеальный наследник</div><div class="s">мини-сериал</div></div></div>
+      <div class="gcard"><img src="assets/img/character-2.jpg" alt="ИИ-персонаж"><div class="cap"><div class="t">Неидеальный наследник</div><div class="s">мини-сериал</div></div></div>
+      <div class="gcard"><img src="assets/img/character-3.jpg" alt="ИИ-персонаж"><div class="cap"><div class="t">Подлая подружка</div><div class="s">мини-сериал</div></div></div>
+      <div class="gcard"><img src="assets/img/character-4.jpg" alt="ИИ-персонаж"><div class="cap"><div class="t">Драгоценная месть</div><div class="s">мини-сериал</div></div></div>
+      <div class="gcard"><img src="assets/img/character-5.jpg" alt="ИИ-персонаж"><div class="cap"><div class="t">Авторский персонаж</div><div class="s">для Reels</div></div></div>
+      <div class="gcard"><img src="assets/img/character-1.jpg" alt="ИИ-персонаж"><div class="cap"><div class="t">Неидеальный наследник</div><div class="s">мини-сериал</div></div></div>
+      <div class="gcard"><img src="assets/img/character-2.jpg" alt="ИИ-персонаж"><div class="cap"><div class="t">Неидеальный наследник</div><div class="s">мини-сериал</div></div></div>
+      <div class="gcard"><img src="assets/img/character-3.jpg" alt="ИИ-персонаж"><div class="cap"><div class="t">Подлая подружка</div><div class="s">мини-сериал</div></div></div>
+      <div class="gcard"><img src="assets/img/character-4.jpg" alt="ИИ-персонаж"><div class="cap"><div class="t">Драгоценная месть</div><div class="s">мини-сериал</div></div></div>
+      <div class="gcard"><img src="assets/img/character-5.jpg" alt="ИИ-персонаж"><div class="cap"><div class="t">Авторский персонаж</div><div class="s">для Reels</div></div></div>
+    </div>
+  </div>
+</div>
+
+<!-- FUTURE -->
+<section id="future" class="alt">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Что вы получите</span>
+      <h2>Спокойный ритм, больше творчества и новый навык</h2>
+      <p>Пока другие тратят часы на съёмки, поиск актёров и сложный монтаж — вы создаёте ролики за чашкой кофе.</p>
+    </div>
+    <div class="cards-4">
+      <div class="fcard reveal"><div class="ic ic-free"><svg class="glyph" viewBox="0 0 48 48"><g fill="none" stroke="#fff" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="15"/><ellipse cx="24" cy="24" rx="6.5" ry="15"/><line x1="9" y1="24" x2="39" y2="24"/></g></svg></div><h3>Свобода</h3><p>Работаете откуда угодно. Всё, что нужно — интернет и понятный алгоритм действий.</p></div>
+      <div class="fcard reveal"><div class="ic ic-speed"><svg class="glyph" viewBox="0 0 48 48"><path d="M27 5 12 27h9l-3 16 17-24H22z" fill="#fff"/></svg></div><h3>Скорость</h3><p>Полный цикл создания ролика занимает около 15 минут в CapCut.</p></div>
+      <div class="fcard reveal"><div class="ic ic-love"><svg class="glyph" viewBox="0 0 48 48"><path d="M24 41C9 31 6 20 13 14c5-4 9-1 11 3 2-4 6-7 11-3 7 6 4 17-11 27z" fill="#fff"/></svg></div><h3>Востребованность</h3><p>ИИ-контент нужен брендам и блогерам — это навык, который можно превратить в заказы.</p></div>
+      <div class="fcard reveal"><div class="ic ic-studio"><svg class="glyph" viewBox="0 0 48 48"><g fill="#fff"><path d="M24 5c7 6 9 14 8 21l-4 4h-8l-4-4c-1-7 1-15 8-21z"/><circle cx="24" cy="18" r="3.4" fill="var(--b)"/><path d="M15 31l-4 7 8-3z M33 31l4 7-8-3z"/></g></svg></div><h3>Своё дело</h3><p>Запускаете собственные мини-сериалы и нейроперсонажей, которые растут в охватах.</p></div>
+    </div>
+    <div class="prop spin" style="top:30px;right:14px;width:58px" aria-hidden="true"><svg viewBox="0 0 64 64"><defs><radialGradient id="gb2" cx="38%" cy="30%" r="78%"><stop offset="0" stop-color="#ff95a8"/><stop offset="45%" stop-color="#ff3d6e"/><stop offset="100%" stop-color="#c2174a"/></radialGradient></defs><path d="M32 59C19 54 11 43 11 31c0-4 3-7 7-6 3 0 5 1 7 1l7-3 7 3c2 0 4-1 7-1 4-1 7 2 7 6 0 12-8 23-21 28z" fill="url(#gb2)"/><g fill="#46B07A"><path d="M32 19C28 12 21 10 16 11c2 5 8 8 16 8z"/><path d="M32 19c4-7 11-9 16-8-2 5-8 8-16 8z"/></g><path d="M32 20c0-7 2-12 0-15-2 3 0 8 0 15z" fill="#3a9560"/><g fill="#ffe08a"><circle cx="23" cy="34" r="1.5"/><circle cx="32" cy="38" r="1.5"/><circle cx="41" cy="34" r="1.5"/><circle cx="27" cy="45" r="1.5"/><circle cx="37" cy="45" r="1.5"/><circle cx="32" cy="29" r="1.5"/></g><ellipse cx="24" cy="31" rx="5" ry="3" fill="#fff" opacity=".45"/></svg></div>
+    <div class="prop spin2" style="bottom:6px;left:10px;width:46px" aria-hidden="true"><svg viewBox="0 0 64 64"><defs><radialGradient id="gp2" cx="38%" cy="32%" r="72%"><stop offset="0" stop-color="#ffffff"/><stop offset="50%" stop-color="#f3e9dc"/><stop offset="100%" stop-color="#dcc3a2"/></radialGradient></defs><circle cx="32" cy="32" r="23" fill="url(#gp2)"/><ellipse cx="24" cy="23" rx="8" ry="5" fill="#fff" opacity=".8"/><ellipse cx="41" cy="42" rx="5" ry="3" fill="#cbb089" opacity=".5"/></svg></div>
+  </div>
+</section>
+
+<!-- HOW -->
+<section id="how">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Как устроена система</span>
+      <h2>4 шага от идеи до готового ролика</h2>
+      <p>Каждый модуль — это конкретный инструмент и понятный результат.</p>
+    </div>
+    <div class="steps">
+      <div class="step reveal">
+        <div class="no">01</div>
+        <div><h3>Схема «Режиссёр» <span class="mod">Модуль 2</span></h3>
+          <p>Создаём сценарии и промпты для стабильных эстетичных персонажей. Уровень визуала — как в дорогих мультфильмах или полуреализм, почти кино.</p>
+          <div class="tools"><span class="tool"><span class="dot" style="background:#4285F4"></span>Gemini</span></div></div>
+        <div class="visual-note">Визуал: диалог с Gemini → готовый персонаж</div>
+      </div>
+      <div class="step reveal">
+        <div class="no">02</div>
+        <div><h3>Схема «Оживление» <span class="mod">Модуль 3</span></h3>
+          <p>Заставляем персонажа говорить и двигаться: естественные эмоции, синхронизация речи (липсинк) и качественная озвучка.</p>
+          <div class="tools"><span class="tool"><span class="dot" style="background:#111"></span>Grok</span><span class="tool"><span class="dot" style="background:var(--strawberry)"></span>ElevenLabs</span></div></div>
+        <div class="visual-note">Визуал: до / после — говорящий ИИ-аватар</div>
+      </div>
+      <div class="step reveal">
+        <div class="no">03</div>
+        <div><h3>Схема «Сборка за 15 минут» <span class="mod">Модуль 4</span></h3>
+          <p>Быстрый и аккуратный монтаж по готовой схеме. Без сложных эффектов — только то, что удерживает внимание зрителя.</p>
+          <div class="tools"><span class="tool"><span class="dot" style="background:var(--leaf)"></span>CapCut</span></div></div>
+        <div class="visual-note">Визуал: таймлапс сборки ролика</div>
+      </div>
+      <div class="step reveal">
+        <div class="no">04</div>
+        <div><h3>Схема «Монетизация» <span class="mod">Модуль 5</span></h3>
+          <p>Как превратить навык в доход: нативная реклама, видео на заказ, партнёрские программы и монетизация в зарубежном TikTok.</p>
+          <div class="tools"><span class="tool">🇺🇸 США</span><span class="tool">🇩🇪 Германия</span><span class="tool">🇬🇧 Англия</span><span class="tool">🇫🇷 🇮🇹 🇪🇸 ЕС</span></div></div>
+        <div class="visual-note">Результат: первые заказы и выплаты</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROGRAM -->
+<section id="program" class="alt">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Программа курса</span>
+      <h2>Что внутри? Пошаговая инструкция к действию</h2>
+      <p>Пять модулей, которые ведут от первой регистрации сервиса до первых результатов.</p>
+    </div>
+    <div class="prog">
+      <div class="acc reveal"><div class="acc-head"><span class="mnum">1</span><h3>Старт в ИИ и настройки</h3><span class="plus"></span></div>
+        <div class="acc-body"><ul><li>Регистрация и оплата всех сервисов (Gemini, Grok) для ПК и мобильного</li><li>Инструкция для РФ и РБ: проверенный VPN (Capybara) и рабочие способы оплаты подписок</li></ul></div></div>
+      <div class="acc reveal"><div class="acc-head"><span class="mnum">2</span><h3>Создание персонажей</h3><span class="plus"></span></div>
+        <div class="acc-body"><ul><li>Работа со сценариями через Gemini</li><li>Промпты для создания персонажей киношного уровня</li></ul></div></div>
+      <div class="acc reveal"><div class="acc-head"><span class="mnum">3</span><h3>Анимация и липсинк</h3><span class="plus"></span></div>
+        <div class="acc-body"><ul><li>Оживление персонажей через Grok</li><li>Естественные эмоции и синхронизация речи</li><li>Доступная озвучка через ElevenLabs (в Telegram)</li></ul></div></div>
+      <div class="acc reveal"><div class="acc-head"><span class="mnum">4</span><h3>Монтаж</h3><span class="plus"></span></div>
+        <div class="acc-body"><ul><li>Установка и работа в CapCut на ПК</li><li>Схема сборки ролика за 15 минут</li></ul></div></div>
+      <div class="acc reveal"><div class="acc-head"><span class="mnum">5</span><h3>Монетизация</h3><span class="plus"></span></div>
+        <div class="acc-body"><ul><li>Как превратить навык в доход: пошаговая модель</li><li>Instagram: медиа-актив, где искать клиентов и партнёрки</li><li>TikTok: монетизация за рубежом (10к подписчиков, 100к просмотров за 3 месяца), на каких языках делать ролики</li></ul></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- AUTHOR -->
+<section id="author">
+  <div class="wrap about-grid">
+    <div class="about-photo reveal">
+      <div class="frame"><img src="assets/img/about.jpg" alt="Умида Нишанова"></div>
+      <div class="badge"><div class="num">100 000+</div><div class="lbl">подписчиков за 2 месяца</div></div>
+    </div>
+    <div class="about-text reveal">
+      <span class="eyebrow">Об авторе</span>
+      <h2>Привет! Я — Умида, ваш проводник в мир ИИ-контента</h2>
+      <p>Я — <b>Умида Нишанова</b>, ИИ-креатор и автор красивых персонажей. Снимаю мини-сериалы и делаю нативную рекламу брендов прямо в видео — и учу этому с нуля.</p>
+      <p>За <b>2 месяца</b> я выросла с нуля до <b>100 000 подписчиков</b> и заработала <b>больше 1 млн рублей</b> на партнёрских программах, рекламе и видео на заказ. Это не магия — это понятная система, которой я делюсь на курсе.</p>
+      <p>Я делюсь не теорией, а реальными инструментами и схемами, по которым работаю каждый день. Если получилось у меня — получится и у вас.</p>
+      <div class="about-stats">
+        <div class="st"><div class="n">100 000+</div><div class="l">подписчиков за 2 месяца с нуля</div></div>
+        <div class="st"><div class="n">1 млн ₽+</div><div class="l">доход с партнёрок, рекламы и заказов</div></div>
+        <div class="st"><div class="n">11,7 млн</div><div class="l">просмотров на топ-ролике</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section id="reviews" class="alt">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Отзывы учеников</span>
+      <h2>Что говорят те, кто уже учится</h2>
+      <p>Живые сообщения от людей, которые начинали с нуля — без опыта в дизайне и монтаже.</p>
+    </div>
+    <div class="quotes">
+      <div class="rcard reveal"><div class="stars">★★★★★</div><div class="txt">«Формат — то, что нужно: короткие уроки без воды, только польза. У меня маленькие дети, и часовые видео на YouTube смотреть некогда — а тут всё по делу».</div><div class="who"><div class="av">М</div><div><div class="nm">Мария</div><div class="rl">мама в декрете</div></div></div></div>
+      <div class="rcard reveal"><div class="stars">★★★★★</div><div class="txt">«Уже сняла свой первый ИИ-сериал — прям вау-ощущение! После курса появилось чувство „у меня получится“ — и это правда работает».</div><div class="who"><div class="av">А</div><div><div class="nm">Алина</div><div class="rl">начинала с нуля</div></div></div></div>
+      <div class="rcard reveal"><div class="stars">★★★★★</div><div class="txt">«Раньше брала похожие курсы у других — за ту же цену, но объясняли не так подробно. Здесь всё стало намного яснее, и я наконец начала делать свои сериалы».</div><div class="who"><div class="av">Е</div><div><div class="nm">Елена</div><div class="rl">ученица курса</div></div></div></div>
+      <div class="rcard reveal"><div class="stars">★★★★★</div><div class="txt">«Зашла на первый урок и сразу поняла, что не зря купила именно здесь. Главное — вникнуть и делать. Дальше будет круто!»</div><div class="who"><div class="av">О</div><div><div class="nm">Ольга</div><div class="rl">ученица курса</div></div></div></div>
+    </div>
+    <p class="shots-head reveal">Ещё больше живых отзывов — в моём <a href="https://t.me/umidacrafts/104" target="_blank" rel="noopener" style="color:var(--strawberry-deep);text-decoration:underline">Telegram-канале</a> 💬</p>
+  </div>
+</section>
+
+<!-- PRICES -->
+<section id="prices">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Тарифы</span>
+      <h2>Выберите удобный формат участия</h2>
+      <p>Все уроки — в закрытом Telegram-канале. Начните в своём темпе или с моей личной поддержкой.</p>
+    </div>
+    <div class="prices">
+      <div class="price reveal">
+        <div class="pname">Самостоятельный</div>
+        <div class="psub">Изучаете всё в своём темпе, в удобное время.</div>
+        <div class="pcost">2 999 ₽</div>
+        <ul>
+          <li><span class="ck">✓</span>Все уроки в закрытом Telegram-канале</li>
+          <li><span class="ck">✓</span>База готовых промптов</li>
+          <li><span class="ck">✓</span>Контакты сервисов и ресурсов</li>
+          <li><span class="ck">✓</span>Доступ к материалам остаётся навсегда</li>
         </ul>
-        <div class="header__cta">
-          <a href="https://t.me/umidacrafts/104" target="_blank" rel="noopener" class="btn btn-primary">Подробнее в Telegram</a>
-        </div>
-      </nav>
-
-      <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </header>
-
-  <main id="top">
-
-    <!-- HERO -->
-    <section class="hero">
-      <div class="container hero__inner">
-        <div class="hero__content reveal">
-          <span class="eyebrow"><span class="eyebrow__emoji">🍓</span> Онлайн-курс</span>
-          <h1 class="hero__title">Создавай свои <span>ИИ-мультики</span> и зарабатывай на нейросетях</h1>
-          <p class="hero__text">
-            Пошаговый курс для тех, кто хочет научиться создавать яркие анимационные ролики с помощью
-            нейросетей — без опыта в рисовании и монтаже. От идеи и персонажа до готового видео для соцсетей.
-          </p>
-          <div class="hero__actions">
-            <a href="https://t.me/umidacrafts/104" target="_blank" rel="noopener" class="btn btn-primary btn-pulse">Смотреть подробности и отзывы</a>
-            <a href="https://t.me/umidanishanowa" target="_blank" rel="noopener" class="btn btn-secondary">Задать вопрос Умиде</a>
-          </div>
-          <div class="hero__stats">
-            <div>
-              <div class="hero__stat-num">2 тарифа</div>
-              <div class="hero__stat-label">на любой бюджет</div>
-            </div>
-            <div>
-              <div class="hero__stat-num">100% онлайн</div>
-              <div class="hero__stat-label">учитесь в своём темпе</div>
-            </div>
-            <div>
-              <div class="hero__stat-num">Без опыта</div>
-              <div class="hero__stat-label">подойдёт новичкам</div>
-            </div>
-          </div>
-        </div>
-        <div class="hero__media reveal">
-          <img src="assets/img/hero.jpg" alt="Умида и её ИИ-персонаж" width="760" height="900" />
-          <div class="hero__badge">
-            <span class="hero__badge-emoji">✨</span>
-            <span>Сделано на нейросетях</span>
-          </div>
-          <span class="float-deco float-deco--sm hero__deco-1" aria-hidden="true">🎬</span>
-          <span class="float-deco float-deco--slow hero__deco-2" aria-hidden="true">🍓</span>
-        </div>
+        <a class="btn btn-ghost" href="https://web.tribute.tg/s/Sau" target="_blank" rel="noopener">Оплатить «Самостоятельный»</a>
       </div>
-    </section>
-
-    <!-- RIBBON -->
-    <div class="ribbon-wrap container">
-      <div class="ribbon reveal">
-        <div class="ribbon__track" aria-hidden="true">
-          <span>🍓 ИИ-мультики</span>
-          <span>✨ Нейросети</span>
-          <span>🎬 Анимация</span>
-          <span>🎨 Свои персонажи</span>
-          <span>📱 Контент для соцсетей</span>
-          <span>🍓 ИИ-мультики</span>
-          <span>✨ Нейросети</span>
-          <span>🎬 Анимация</span>
-          <span>🎨 Свои персонажи</span>
-          <span>📱 Контент для соцсетей</span>
-        </div>
+      <div class="price feat reveal">
+        <span class="tag">Больше поддержки</span>
+        <div class="pname">С Умидой</div>
+        <div class="psub">Все материалы + личная помощь и обратная связь.</div>
+        <div class="pcost">4 999 ₽</div>
+        <ul>
+          <li><span class="ck">✓</span>Всё из тарифа «Самостоятельный»</li>
+          <li><span class="ck">✓</span>Закрытый чат лично со мной</li>
+          <li><span class="ck">✓</span>Отвечаю на вопросы и помогаю лично</li>
+          <li><span class="ck">✓</span>Докручиваю ваши генерации</li>
+          <li><span class="ck">✓</span>Новые уроки по вашим запросам</li>
+        </ul>
+        <a class="btn" href="https://web.tribute.tg/s/Qsv" target="_blank" rel="noopener">Оплатить «С Умидой»</a>
       </div>
     </div>
+    <p class="pay-note reveal">После оплаты через Tribute вы получите доступ к закрытому Telegram-каналу с уроками. 💬 Остались вопросы? Напишите мне — <a href="https://t.me/umidanishanowa" target="_blank" rel="noopener" style="color:var(--strawberry-deep);text-decoration:underline">@umidanishanowa</a>, помогу выбрать формат.</p>
+  </div>
+</section>
 
-    <!-- FEATURES -->
-    <section class="features" id="features">
-      <div class="container">
-        <div class="section-head reveal">
-          <span class="eyebrow">Почему этот курс</span>
-          <h2 class="section-title">Всё, что нужно для старта в ИИ-анимации</h2>
-          <p class="section-lead">Понятная методика, готовые шаблоны промптов и поддержка на каждом шаге — даже если вы никогда не работали с нейросетями.</p>
-        </div>
-        <div class="features__grid">
-          <div class="feature-card reveal">
-            <div class="feature-card__icon">🎬</div>
-            <h3>От идеи до видео</h3>
-            <p>Разберём весь путь: придумываем персонажа, сценарий, генерируем сцены и собираем готовый ролик.</p>
-          </div>
-          <div class="feature-card reveal">
-            <div class="feature-card__icon">🧠</div>
-            <h3>Рабочие промпты</h3>
-            <p>Готовые формулы и шаблоны запросов для нейросетей — не нужно гадать, как описать персонажа.</p>
-          </div>
-          <div class="feature-card reveal">
-            <div class="feature-card__icon">🎨</div>
-            <h3>Свой узнаваемый стиль</h3>
-            <p>Научитесь создавать персонажей, которые выглядят одинаково в разных сценах и роликах.</p>
-          </div>
-          <div class="feature-card reveal">
-            <div class="feature-card__icon">📱</div>
-            <h3>Контент для соцсетей</h3>
-            <p>Форматы под Reels, Shorts и TikTok — короткие истории, которые набирают просмотры.</p>
-          </div>
-          <div class="feature-card reveal">
-            <div class="feature-card__icon">💬</div>
-            <h3>Поддержка автора</h3>
-            <p>На тарифе «С Умидой» — обратная связь, разбор работ и ответы на вопросы лично.</p>
-          </div>
-          <div class="feature-card reveal">
-            <div class="feature-card__icon">⚡</div>
-            <h3>Без сложного софта</h3>
-            <p>Только доступные инструменты и нейросети — никаких дорогих программ и мощных компьютеров.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ABOUT AUTHOR -->
-    <section class="about" id="about">
-      <div class="container about__inner">
-        <div class="about__media reveal">
-          <img src="assets/img/about.jpg" alt="Умида работает над ИИ-роликом за планшетом" width="680" height="850" />
-          <span class="float-deco float-deco--sm about__deco-1" aria-hidden="true">🎨</span>
-          <span class="float-deco float-deco--slow about__deco-2" aria-hidden="true">✨</span>
-        </div>
-        <div class="about__text reveal">
-          <span class="eyebrow">Об авторе</span>
-          <h2 class="section-title">Привет, я <span class="about__name">Умида</span> 🍓</h2>
-          <p>
-            Я создаю ИИ-мультики и анимированных персонажей, которые набирают тысячи просмотров в соцсетях.
-            За это время я прошла путь от первых неуклюжих генераций до стабильного узнаваемого стиля
-            и собственных проектов с персонажами.
-          </p>
-          <p>
-            В этом курсе я собрала всё, что помогло мне самой: рабочие связки нейросетей, проверенные
-            промпты и понятный план, по которому может пройти даже новичок.
-          </p>
-          <ul class="about__list">
-            <li>Создаю и веду собственные анимационные проекты с персонажами</li>
-            <li>Делюсь только проверенными на практике инструментами и приёмами</li>
-            <li>Объясняю просто — даже если вы открыли нейросеть впервые</li>
-          </ul>
-          <a href="https://t.me/umidanishanowa" target="_blank" rel="noopener" class="btn btn-primary">Написать Умиде</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- GALLERY -->
-    <section class="gallery" id="gallery">
-      <div class="container gallery__head">
-        <div class="section-head reveal">
-          <span class="eyebrow">Персонажи</span>
-          <h2 class="section-title">Кого можно создать на курсе</h2>
-          <p class="section-lead">Несколько примеров персонажей и историй, созданных с помощью нейросетей. У каждого — свой характер и стиль.</p>
-        </div>
-      </div>
-      <div class="gmq reveal">
-        <div class="gmq-track">
-          <div class="gcard">
-            <img src="assets/img/character-1.jpg" alt="Персонаж: Неидеальный наследник" width="440" height="550" />
-            <div class="gcard__caption">
-              <span class="tag">История</span>
-              <h4>Неидеальный наследник</h4>
-            </div>
-          </div>
-          <div class="gcard">
-            <img src="assets/img/character-2.jpg" alt="Персонаж: Неидеальный наследник, вторая сцена" width="440" height="550" />
-            <div class="gcard__caption">
-              <span class="tag">История</span>
-              <h4>Неидеальный наследник</h4>
-            </div>
-          </div>
-          <div class="gcard">
-            <img src="assets/img/character-3.jpg" alt="Персонаж: Подлая подружка" width="440" height="550" />
-            <div class="gcard__caption">
-              <span class="tag">История</span>
-              <h4>Подлая подружка</h4>
-            </div>
-          </div>
-          <div class="gcard">
-            <img src="assets/img/character-4.jpg" alt="Персонаж: Драгоценная месть" width="440" height="550" />
-            <div class="gcard__caption">
-              <span class="tag">История</span>
-              <h4>Драгоценная месть</h4>
-            </div>
-          </div>
-          <div class="gcard">
-            <img src="assets/img/character-5.jpg" alt="Авторский персонаж Умиды" width="440" height="550" />
-            <div class="gcard__caption">
-              <span class="tag">Авторский</span>
-              <h4>Авторский персонаж</h4>
-            </div>
-          </div>
-          <!-- дублируем карточки для бесшовной анимации -->
-          <div class="gcard" aria-hidden="true">
-            <img src="assets/img/character-1.jpg" alt="" width="440" height="550" />
-            <div class="gcard__caption">
-              <span class="tag">История</span>
-              <h4>Неидеальный наследник</h4>
-            </div>
-          </div>
-          <div class="gcard" aria-hidden="true">
-            <img src="assets/img/character-2.jpg" alt="" width="440" height="550" />
-            <div class="gcard__caption">
-              <span class="tag">История</span>
-              <h4>Неидеальный наследник</h4>
-            </div>
-          </div>
-          <div class="gcard" aria-hidden="true">
-            <img src="assets/img/character-3.jpg" alt="" width="440" height="550" />
-            <div class="gcard__caption">
-              <span class="tag">История</span>
-              <h4>Подлая подружка</h4>
-            </div>
-          </div>
-          <div class="gcard" aria-hidden="true">
-            <img src="assets/img/character-4.jpg" alt="" width="440" height="550" />
-            <div class="gcard__caption">
-              <span class="tag">История</span>
-              <h4>Драгоценная месть</h4>
-            </div>
-          </div>
-          <div class="gcard" aria-hidden="true">
-            <img src="assets/img/character-5.jpg" alt="" width="440" height="550" />
-            <div class="gcard__caption">
-              <span class="tag">Авторский</span>
-              <h4>Авторский персонаж</h4>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- PROGRAM -->
-    <section class="program" id="program">
-      <div class="container">
-        <div class="section-head reveal">
-          <span class="eyebrow">Программа</span>
-          <h2 class="section-title">Чему вы научитесь</h2>
-          <p class="section-lead">Курс построен от простого к сложному — каждый модуль закрепляет практикой.</p>
-        </div>
-        <div class="program__grid">
-          <div class="program-card reveal">
-            <div class="program-card__num">01</div>
-            <div>
-              <h3>Идея и сценарий</h3>
-              <p>Как придумать историю и персонажа, который понравится зрителям и будет легко узнаваться.</p>
-            </div>
-          </div>
-          <div class="program-card reveal">
-            <div class="program-card__num">02</div>
-            <div>
-              <h3>Создание персонажа в ИИ</h3>
-              <p>Подбираем внешность, стиль и настраиваем промпты так, чтобы персонаж получался стабильным.</p>
-            </div>
-          </div>
-          <div class="program-card reveal">
-            <div class="program-card__num">03</div>
-            <div>
-              <h3>Генерация сцен</h3>
-              <p>Учимся выстраивать кадры, ракурсы и эмоции — превращаем сценарий в визуальную историю.</p>
-            </div>
-          </div>
-          <div class="program-card reveal">
-            <div class="program-card__num">04</div>
-            <div>
-              <h3>Анимация и озвучка</h3>
-              <p>Оживляем кадры, добавляем движение, голос и музыку с помощью доступных нейросетей.</p>
-            </div>
-          </div>
-          <div class="program-card reveal">
-            <div class="program-card__num">05</div>
-            <div>
-              <h3>Монтаж ролика</h3>
-              <p>Собираем готовое видео, расставляем акценты и подбираем темп для соцсетей.</p>
-            </div>
-          </div>
-          <div class="program-card reveal">
-            <div class="program-card__num">06</div>
-            <div>
-              <h3>Публикация и упаковка</h3>
-              <p>Форматы, обложки и подписи — как оформить ролик, чтобы его захотели посмотреть.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- PRICING -->
-    <section class="pricing" id="pricing">
-      <div class="container">
-        <div class="section-head reveal">
-          <span class="eyebrow">Тарифы</span>
-          <h2 class="section-title">Выберите свой формат</h2>
-          <p class="section-lead">Можно учиться полностью самостоятельно или с поддержкой и обратной связью от Умиды.</p>
-        </div>
-        <div class="pricing__grid">
-
-          <div class="price-card reveal">
-            <h3 class="price-card__title">Самостоятельный</h3>
-            <p class="price-card__desc">Для тех, кто любит разбираться сам и хочет получить всю базу по выгодной цене.</p>
-            <div class="price-card__price">2 999 ₽</div>
-            <div class="price-card__period">единоразовый платёж</div>
-            <ul class="price-card__list">
-              <li>Полный доступ ко всем урокам курса</li>
-              <li>Готовые шаблоны промптов для нейросетей</li>
-              <li>Примеры персонажей и сценариев</li>
-              <li>Доступ к материалам без ограничения по времени</li>
-              <li>Обновления курса в подарок</li>
-            </ul>
-            <a
-              class="btn btn-primary btn-block"
-              target="_blank"
-              rel="noopener"
-              href="https://t.me/umidanishanowa?text=Привет!%20Хочу%20тариф%20%E2%80%9EСамостоятельный%E2%80%9C%20(2%20999%20%E2%82%BD)"
-            >Выбрать тариф</a>
-          </div>
-
-          <div class="price-card price-card--featured reveal">
-            <span class="price-card__badge">Популярный</span>
-            <h3 class="price-card__title">С Умидой</h3>
-            <p class="price-card__desc">Для тех, кто хочет учиться с поддержкой, разбором работ и обратной связью лично от автора.</p>
-            <div class="price-card__price">5 000 ₽</div>
-            <div class="price-card__period">единоразовый платёж</div>
-            <ul class="price-card__list">
-              <li>Всё из тарифа «Самостоятельный»</li>
-              <li>Личная обратная связь по вашим работам</li>
-              <li>Разбор ошибок и советы по улучшению стиля</li>
-              <li>Ответы на вопросы напрямую от Умиды</li>
-              <li>Доступ к закрытому чату учеников</li>
-            </ul>
-            <a
-              class="btn btn-gold btn-block"
-              target="_blank"
-              rel="noopener"
-              href="https://t.me/umidanishanowa?text=Привет!%20Хочу%20тариф%20%E2%80%9EС%20Умидой%E2%80%9C%20(5%20000%20%E2%82%BD)"
-            >Выбрать тариф</a>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- REVIEWS -->
-    <section class="reviews" id="reviews">
-      <div class="container">
-        <div class="section-head reveal">
-          <span class="eyebrow">Отзывы</span>
-          <h2 class="section-title">Что говорят ученики</h2>
-          <p class="section-lead">Больше отзывов и примеров работ — в Telegram-канале Умиды.</p>
-        </div>
-        <div class="reviews__grid">
-          <div class="review-card reveal">
-            <div class="review-card__stars">★★★★★</div>
-            <p>«Никогда не думала, что смогу сама создать персонажа, который выглядит одинаково в разных сценах. Всё разложено по шагам, очень понятно.»</p>
-            <div class="review-card__author">
-              <span class="review-card__avatar">🍓</span>
-              <span>Алина, ученица</span>
-            </div>
-          </div>
-          <div class="review-card reveal">
-            <div class="review-card__stars">★★★★★</div>
-            <p>«Взяла тариф «С Умидой» — обратная связь реально помогла довести первый ролик до ума. Без подсказок я бы застряла на середине.»</p>
-            <div class="review-card__author">
-              <span class="review-card__avatar">🍓</span>
-              <span>Марина, ученица</span>
-            </div>
-          </div>
-          <div class="review-card reveal">
-            <div class="review-card__stars">★★★★★</div>
-            <p>«Понравилось, что не нужно скачивать сложный софт — всё на тех инструментах, которые я уже пробовала, просто теперь умею пользоваться ими правильно.»</p>
-            <div class="review-card__author">
-              <span class="review-card__avatar">🍓</span>
-              <span>Дилноза, ученица</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- FAQ -->
-    <section class="faq" id="faq">
-      <div class="container">
-        <div class="section-head reveal">
-          <span class="eyebrow">Вопросы и ответы</span>
-          <h2 class="section-title">Часто задаваемые вопросы</h2>
-        </div>
-        <div class="faq__list">
-          <div class="faq-item reveal">
-            <button class="faq-item__question" aria-expanded="false">
-              <span>Нужен ли опыт в рисовании или монтаже?</span>
-              <span class="faq-item__icon">+</span>
-            </button>
-            <div class="faq-item__answer">
-              <div class="faq-item__answer-inner">
-                Нет. Курс рассчитан на новичков — мы используем нейросети для генерации изображений
-                и анимации, поэтому рисовать вручную не нужно. Достаточно базовых навыков работы с компьютером.
-              </div>
-            </div>
-          </div>
-          <div class="faq-item reveal">
-            <button class="faq-item__question" aria-expanded="false">
-              <span>Какие нейросети понадобятся и сколько это стоит?</span>
-              <span class="faq-item__icon">+</span>
-            </button>
-            <div class="faq-item__answer">
-              <div class="faq-item__answer-inner">
-                В курсе разбираются доступные и бесплатные/условно-бесплатные инструменты. Подробный список
-                и актуальные рекомендации — в материалах курса, они могут обновляться вместе с развитием нейросетей.
-              </div>
-            </div>
-          </div>
-          <div class="faq-item reveal">
-            <button class="faq-item__question" aria-expanded="false">
-              <span>В чём разница между тарифами «Самостоятельный» и «С Умидой»?</span>
-              <span class="faq-item__icon">+</span>
-            </button>
-            <div class="faq-item__answer">
-              <div class="faq-item__answer-inner">
-                Оба тарифа дают полный доступ к материалам курса. На тарифе «С Умидой» дополнительно есть
-                личная обратная связь по вашим работам, разбор ошибок и доступ к закрытому чату учеников.
-              </div>
-            </div>
-          </div>
-          <div class="faq-item reveal">
-            <button class="faq-item__question" aria-expanded="false">
-              <span>Сколько времени занимает обучение?</span>
-              <span class="faq-item__icon">+</span>
-            </button>
-            <div class="faq-item__answer">
-              <div class="faq-item__answer-inner">
-                Вы учитесь в своём темпе — материалы остаются с вами без ограничения по времени.
-                Можно проходить курс за несколько дней или растянуть на пару недель, в зависимости от вашей загрузки.
-              </div>
-            </div>
-          </div>
-          <div class="faq-item reveal">
-            <button class="faq-item__question" aria-expanded="false">
-              <span>Как оплатить и получить доступ?</span>
-              <span class="faq-item__icon">+</span>
-            </button>
-            <div class="faq-item__answer">
-              <div class="faq-item__answer-inner">
-                Нажмите на кнопку выбранного тарифа — откроется чат с Умидой в Telegram, где она подскажет
-                все детали по оплате и пришлёт доступ к материалам.
-              </div>
-            </div>
-          </div>
-          <div class="faq-item reveal">
-            <button class="faq-item__question" aria-expanded="false">
-              <span>Гарантируется ли заработок после курса?</span>
-              <span class="faq-item__icon">+</span>
-            </button>
-            <div class="faq-item__answer">
-              <div class="faq-item__answer-inner">
-                Курс даёт навыки и инструменты для создания ИИ-роликов, но результат зависит от вашей практики,
-                регулярности и вовлечённости. Доход не гарантирован.
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- FINAL CTA -->
-    <section class="cta" id="cta">
-      <div class="container">
-        <div class="cta__box reveal">
-          <span class="float-deco float-deco--sm cta__deco cta__deco-1" aria-hidden="true">🍓</span>
-          <span class="float-deco float-deco--slow cta__deco cta__deco-2" aria-hidden="true">🎬</span>
-          <span class="float-deco float-deco--sm cta__deco cta__deco-3" aria-hidden="true">✨</span>
-          <h2>Готовы создать своего первого ИИ-персонажа?</h2>
-          <p>Загляните в Telegram-канал — там подробности курса, примеры работ и отзывы учеников. А если есть вопросы, пишите Умиде лично.</p>
-          <div class="cta__actions">
-            <a href="https://t.me/umidacrafts/104" target="_blank" rel="noopener" class="btn btn-secondary">Канал с подробностями</a>
-            <a href="https://t.me/umidanishanowa" target="_blank" rel="noopener" class="btn btn-secondary">Написать Умиде</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__inner">
-        <a href="#top" class="logo">
-          <svg class="logo__icon" viewBox="0 0 64 64" aria-hidden="true">
-            <path d="M32 14c-3 0-5 2-7 4-2-2-4-4-7-4-2 0-3 1-3 3 0 3 3 5 6 7-4 2-9 7-9 16 0 11 9 18 20 18s20-7 20-18c0-9-5-14-9-16 3-2 6-4 6-7 0-2-1-3-3-3-3 0-5 2-7 4-2-2-4-4-7-4z" fill="#FF4D77"/>
-            <path d="M22 18c2-2 4-4 7-4s5 2 7 4c-2 2-5 3-7 3s-5-1-7-3z" fill="#7BB661"/>
-            <circle cx="24" cy="36" r="2" fill="#F3E9DC"/>
-            <circle cx="32" cy="44" r="2" fill="#F3E9DC"/>
-            <circle cx="40" cy="36" r="2" fill="#F3E9DC"/>
-            <circle cx="28" cy="50" r="2" fill="#F3E9DC"/>
-            <circle cx="36" cy="50" r="2" fill="#F3E9DC"/>
-          </svg>
-          ИИ-мультики
-        </a>
-        <div class="footer__links">
-          <a href="https://t.me/umidacrafts/104" target="_blank" rel="noopener">Telegram-канал</a>
-          <a href="https://t.me/umidanishanowa" target="_blank" rel="noopener">Личный контакт</a>
-          <a href="#faq">FAQ</a>
-        </div>
-      </div>
-      <div class="footer__bottom">
-        <p class="footer__disclaimer">
-          Материалы курса носят образовательный характер. Результаты и доход зависят от вовлечённости
-          и регулярности занятий ученика и не гарантируются.
-        </p>
-        <p class="footer__copy">© 2026 «ИИ-мультики» · Курс Умиды</p>
-      </div>
+<!-- FAQ -->
+<section id="faq" class="alt">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="eyebrow">Вопросы и ответы</span><h2>Частые вопросы</h2></div>
+    <div class="faq">
+      <div class="acc reveal"><div class="acc-head"><h3 style="margin:0">Подойдёт ли мне, если я вообще новичок?</h3><span class="plus"></span></div>
+        <div class="acc-body"><ul><li>Да. Опыт в рисовании, дизайне и монтаже не нужен — всю сложную работу делают нейросети по готовым промптам. Уроки идут пошагово, поэтому справится даже полный новичок.</li></ul></div></div>
+      <div class="acc reveal"><div class="acc-head"><h3 style="margin:0">Что понадобится для работы?</h3><span class="plus"></span></div>
+        <div class="acc-body"><ul><li>Вам понадобятся две нейросети — подписка обойдётся примерно в $50 в месяц.</li></ul></div></div>
+      <div class="acc reveal"><div class="acc-head"><h3 style="margin:0">Смогу ли делать с телефона?</h3><span class="plus"></span></div>
+        <div class="acc-body"><ul><li>Да, Умида сама начинала свои мультики с телефона — функционал в нейросетях такой же, как и на ПК.</li></ul></div></div>
+      <div class="acc reveal"><div class="acc-head"><h3 style="margin:0">Подойдёт ли, если я из России или Беларуси?</h3><span class="plus"></span></div>
+        <div class="acc-body"><ul><li>Да. В первом модуле я даю проверенные VPN и рабочие схемы оплаты сервисов.</li></ul></div></div>
     </div>
-  </footer>
+  </div>
+</section>
 
-  <script src="js/script.js"></script>
+<!-- FINAL -->
+<section>
+  <div class="wrap">
+    <div class="final reveal">
+      <span class="eyebrow">Начните, когда будете готовы</span>
+      <h2>Готовы создать своего первого ИИ-персонажа?</h2>
+      <p>Никакого давления и спешки. Вы заходите в удобном темпе, материалы остаются с вами навсегда, а я рядом, если что-то будет непонятно.</p>
+      <a class="btn btn-lg" href="#prices">Посмотреть форматы участия</a>
+      <div class="reassure">💬 Остались вопросы? <a href="https://t.me/umidanishanowa" target="_blank" rel="noopener" style="color:var(--strawberry-deep);text-decoration:underline">Напишите мне в Telegram</a> — отвечу лично.</div>
+      <div class="prop spin" style="top:18px;right:26px;width:46px" aria-hidden="true"><svg viewBox="0 0 64 64"><defs><linearGradient id="gs2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffe9a8"/><stop offset="100%" stop-color="#d99a12"/></linearGradient></defs><path d="M32 4c2 15 13 26 28 28-15 2-26 13-28 28-2-15-13-26-28-28 15-2 26-13 28-28z" fill="url(#gs2)"/><ellipse cx="25" cy="23" rx="5" ry="3" fill="#fff" opacity=".65"/></svg></div>
+      <div class="prop spin2" style="bottom:20px;left:30px;width:42px" aria-hidden="true"><svg viewBox="0 0 64 64"><defs><radialGradient id="gb3" cx="38%" cy="30%" r="78%"><stop offset="0" stop-color="#ff95a8"/><stop offset="45%" stop-color="#ff3d6e"/><stop offset="100%" stop-color="#c2174a"/></radialGradient></defs><path d="M32 59C19 54 11 43 11 31c0-4 3-7 7-6 3 0 5 1 7 1l7-3 7 3c2 0 4-1 7-1 4-1 7 2 7 6 0 12-8 23-21 28z" fill="url(#gb3)"/><g fill="#46B07A"><path d="M32 19C28 12 21 10 16 11c2 5 8 8 16 8z"/><path d="M32 19c4-7 11-9 16-8-2 5-8 8-16 8z"/></g><path d="M32 20c0-7 2-12 0-15-2 3 0 8 0 15z" fill="#3a9560"/><g fill="#ffe08a"><circle cx="23" cy="34" r="1.5"/><circle cx="32" cy="38" r="1.5"/><circle cx="41" cy="34" r="1.5"/><circle cx="27" cy="45" r="1.5"/><circle cx="37" cy="45" r="1.5"/><circle cx="32" cy="29" r="1.5"/></g><ellipse cx="24" cy="31" rx="5" ry="3" fill="#fff" opacity=".45"/></svg></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <a href="#top" class="logo"><span class="mark">🍓</span><span>ИИ-мультики<small>Курс Умиды</small></span></a>
+    <div class="flinks">
+      <a href="#how">Как это работает</a>
+      <a href="#program">Программа</a>
+      <a href="#prices">Тарифы</a>
+      <a href="https://t.me/umidacrafts/104" target="_blank" rel="noopener">Telegram-канал</a>
+      <a href="https://t.me/umidanishanowa" target="_blank" rel="noopener">Контакты</a>
+    </div>
+    <div class="copy" style="margin-bottom:6px">Связаться со мной: <a href="https://t.me/umidanishanowa" target="_blank" rel="noopener" style="color:var(--strawberry-deep);font-weight:700">@umidanishanowa</a></div>
+    <div class="copy">© 2025 ИИ-мультики · Курс Умиды Нишановой по нейросетям. Все права защищены.</div>
+  </div>
+</footer>
+<script src="js/script.js"></script>
 </body>
 </html>

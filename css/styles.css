@@ -19,20 +19,32 @@
   --blush: rgba(255, 77, 119, 0.18);
   --ink: var(--text);
 
-  /* Фон — тёплый градиент (персик → крем → розовый) */
-  --bg-gradient: linear-gradient(160deg, #FFE3D6 0%, #FBF1E2 45%, #FFE0EA 100%);
+  /* Фон — тёплый mesh (персик · клубника · золото поверх крема) */
+  --bg-base: linear-gradient(160deg, #FFE7DA 0%, #FCF3E5 46%, #FFE2EC 100%);
+  --bg-gradient:
+    radial-gradient(58% 48% at 14% 6%, rgba(255, 158, 140, 0.45), transparent 60%),
+    radial-gradient(48% 42% at 90% 16%, rgba(255, 122, 168, 0.4), transparent 62%),
+    radial-gradient(52% 48% at 78% 96%, rgba(230, 178, 76, 0.24), transparent 64%),
+    var(--bg-base);
 
   /* Шрифты */
   --font-heading: "Unbounded", sans-serif;
   --font-body: "Manrope", sans-serif;
 
+  /* Движение */
+  --ease: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-spring: cubic-bezier(0.34, 1.4, 0.5, 1);
+  --transition: 0.3s ease;
+
   /* Прочее */
   --radius-lg: 28px;
   --radius-md: 18px;
   --radius-sm: 12px;
-  --shadow-soft: 0 20px 50px -20px rgba(225, 29, 84, 0.25);
-  --shadow-card: 0 10px 30px -12px rgba(42, 19, 32, 0.18);
-  --transition: 0.3s ease;
+  /* Тёплые многослойные тени в hue фона + верхний highlight */
+  --shadow-soft: 0 2px 8px -3px rgba(225, 29, 84, 0.16), 0 26px 60px -24px rgba(225, 29, 84, 0.34);
+  --shadow-card: 0 1px 2px rgba(107, 37, 69, 0.05), 0 16px 38px -18px rgba(107, 37, 69, 0.22);
+  --edge: inset 0 1px 0 rgba(255, 255, 255, 0.7);
+  --hairline: 1px solid rgba(107, 37, 69, 0.07);
 }
 
 /* ============================================
@@ -52,11 +64,21 @@ html {
 body {
   font-family: var(--font-body);
   color: var(--text);
-  background: var(--bg-gradient);
-  background-size: 200% 200%;
-  animation: bgShift 24s ease-in-out infinite alternate;
+  background: var(--bg-gradient) fixed;
+  min-height: 100dvh;
   line-height: 1.6;
   overflow-x: hidden;
+}
+
+/* Тонкое зерно поверх фона — снимает цифровую плоскость */
+.grain {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0.5;
+  mix-blend-mode: soft-light;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.5'/%3E%3C/svg%3E");
 }
 
 img {
@@ -89,9 +111,18 @@ button {
 
 h1, h2, h3, h4 {
   font-family: var(--font-heading);
-  font-weight: 600;
-  line-height: 1.2;
-  letter-spacing: -0.01em;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: -0.022em;
+  text-wrap: balance;
+}
+
+h2 {
+  letter-spacing: -0.028em;
+}
+
+p {
+  text-wrap: pretty;
 }
 
 section, .gallery {
@@ -108,16 +139,6 @@ section.alt {
   }
 }
 
-@keyframes bgShift {
-  0% { background-position: 0% 0%; }
-  100% { background-position: 100% 100%; }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  body {
-    animation: none;
-  }
-}
 
 /* ============================================
    Декоративные плавающие элементы
@@ -235,9 +256,23 @@ section.alt {
   white-space: nowrap;
 }
 
+.btn {
+  transition: transform 0.35s var(--ease-spring), box-shadow var(--transition), background var(--transition), color var(--transition);
+}
+
 .btn:hover {
   transform: translateY(-3px);
   box-shadow: 0 24px 50px -16px rgba(225, 29, 84, 0.4);
+}
+
+.btn:active {
+  transform: translateY(-1px) scale(0.97);
+}
+
+:focus-visible {
+  outline: 2px solid var(--strawberry-dark);
+  outline-offset: 3px;
+  border-radius: 6px;
 }
 
 .btn-lg {
@@ -273,19 +308,22 @@ section.alt {
 
 .reveal {
   opacity: 0;
-  transform: translateY(28px);
-  transition: opacity 0.7s ease, transform 0.7s ease;
+  transform: translateY(34px);
+  filter: blur(10px);
+  transition: opacity 0.8s var(--ease), transform 0.9s var(--ease), filter 0.8s var(--ease);
 }
 
 .reveal.is-visible {
   opacity: 1;
   transform: translateY(0);
+  filter: blur(0);
 }
 
 @media (prefers-reduced-motion: reduce) {
   .reveal {
     opacity: 1;
     transform: none;
+    filter: none;
     transition: none;
   }
 }
@@ -485,8 +523,10 @@ header#top {
 }
 
 .hero h1 {
-  font-size: clamp(1.9rem, 4.4vw, 3.4rem);
-  font-weight: 700;
+  font-size: clamp(2.1rem, 5vw, 3.85rem);
+  font-weight: 800;
+  letter-spacing: -0.035em;
+  line-height: 1.04;
   margin: 22px 0 18px;
   overflow-wrap: break-word;
 }
@@ -880,19 +920,23 @@ header#top {
 }
 
 .ic-free {
-  background: linear-gradient(135deg, #4285F4 0%, #34A1F2 100%);
+  background: linear-gradient(135deg, #5FBF8E 0%, #2E8B6A 100%);
+  box-shadow: 0 10px 22px -10px rgba(46, 139, 106, 0.7);
 }
 
 .ic-speed {
-  background: linear-gradient(135deg, #FFB23E 0%, #FF7A6B 100%);
+  background: linear-gradient(135deg, #FFC24E 0%, var(--coral) 100%);
+  box-shadow: 0 10px 22px -10px rgba(230, 178, 76, 0.7);
 }
 
 .ic-love {
   background: linear-gradient(135deg, var(--strawberry) 0%, var(--strawberry-deep) 100%);
+  box-shadow: 0 10px 22px -10px rgba(225, 29, 84, 0.6);
 }
 
 .ic-studio {
-  background: linear-gradient(135deg, #8B6BF2 0%, var(--strawberry-deep) 100%);
+  background: linear-gradient(135deg, var(--coral) 0%, var(--strawberry-dark) 100%);
+  box-shadow: 0 10px 22px -10px rgba(255, 122, 107, 0.7);
 }
 
 @media (max-width: 960px) {
@@ -1757,4 +1801,69 @@ footer .logo {
 
 .legal strong {
   color: var(--text);
+}
+
+/* ============================================
+   Премиум-поверхности и моушен
+   ============================================ */
+
+/* Тонкий кант на светлых поверхностях — премиум-глубина */
+.fcard,
+.step,
+.rcard,
+.acc,
+.price,
+.proof,
+.visual-note,
+.about-stats .st,
+.about-photo .badge {
+  border: var(--hairline);
+}
+
+.price.feat {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Верхний highlight-«стекло» на глянцевых карточках */
+.hero-frame,
+.about-photo .frame {
+  box-shadow: var(--edge), var(--shadow-soft);
+}
+
+/* Спринг-инерция на hover вместо ровного ease */
+.fcard,
+.step,
+.rcard,
+.price,
+.gcard,
+.about-stats .st,
+.ic,
+.proof .item {
+  transition-timing-function: var(--ease-spring);
+}
+
+/* Стеклянные чипы инструментов оживают под курсором */
+.tool,
+.chip {
+  transition: transform 0.3s var(--ease-spring), box-shadow var(--transition);
+}
+
+.tool:hover {
+  transform: translateY(-2px);
+}
+
+.step:hover .tool {
+  box-shadow: 0 6px 16px -8px rgba(107, 37, 69, 0.3);
+}
+
+/* Мягкое «дыхание» статов вместо статики */
+.proof .item:hover .num {
+  transform: scale(1.06);
+  transition: transform 0.3s var(--ease-spring);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .grain {
+    display: none;
+  }
 }

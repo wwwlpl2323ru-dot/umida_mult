@@ -1147,6 +1147,17 @@ header#top {
   font-size: 0.8rem;
 }
 
+.acc-body .lesson {
+  padding: 14px 26px 2px;
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.acc-body .lesson + ul {
+  padding-top: 4px;
+}
+
 @media (max-width: 600px) {
   .acc-head {
     padding: 16px 20px;
@@ -1159,6 +1170,11 @@ header#top {
 
   .acc-body ul {
     padding: 0 20px 18px;
+  }
+
+  .acc-body .lesson {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
